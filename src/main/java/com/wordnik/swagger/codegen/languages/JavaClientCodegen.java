@@ -63,10 +63,13 @@ public class JavaClientCodegen extends DefaultCodegen implements CodegenConfig {
         "Integer",
         "Long",
         "Float",
-        "Object")
+        "Object",
+        "Void")
       );
     instantiationTypes.put("array", "ArrayList");
     instantiationTypes.put("map", "HashMap");
+    
+	typeMapping.put("Void", "void");
   }
 
   @Override
